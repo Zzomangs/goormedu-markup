@@ -109,15 +109,17 @@
 .ip-box:first-child{
     position: relative;
 }
-.email-check{
-    display: block;
+
+.email-btn{
     position: absolute;
     height: 100%;
+    width: 4em;
+    height: 2.3em;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
 }
-.email-btn{
-    width: 20px;
-    right: 10;
-}
+
 .chk-box-txt{
     font-size: 14px;
 }
