@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/subpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb78802e54.js" crossorigin="anonymous"></script>
+    <title>My class</title>
+</head>
+<body>
+    <header>
+        <article class="header-cate">
+           <div class="header-mn">
+            <ul class="header-f">
+                <li><a href="#">EDU</a></li>
+                <li><a href="#">LEVEL</a></li>
+                <li><a href="#">DEVTH</a></li>
+                <li><a href="#">IDE</a></li>
+                <li><a href="#">CODING PARTY</a></li>
+            </ul>
+            <ul class="header-s">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">Language(언어)</a></li>
+            </ul>
+           </div>
+        </article>
+        <article class="header-main">
+            <div class="header-nav">
+             <a href="#"><img src="./img/logo.jpg" alt="" class="logo"></a>
+             <img src="./img/nav.jpg" alt="" class="logo">
+             <div class="container-1">
+                <input type="search" id="search" placeholder="검색어를 입력하세요" />
+                <span class="icon"><i class="fa fa-search"></i></span>
+             </div>
+             <div class="board">
+                <div class="board-mn">
+                    <div>
+                        <span class="name"><a href="#">게시판</a></span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div>
+                        <span><a href="#">내 강좌</a></span>
+                    </div>
+                    <div class="invi">
+                        <a href="#"><span>초대코드입력</span></a>
+                    </div>
+                    <a href="#" class="circle"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="circle"><i class="fas fa-bell"></i></a>
+                </div>
+             </div>
+           </div>
+        </article>
+    </header>
+    <section class="study">
+        <article class="user-student">
+            <div id="student">
+                <div class="user"><i class="fas fa-user-alt"></i></div>
+            <div class="user-info">
+                <div class="user-name">
+                    <span>User name</span> <span>Student</span>
+                </div>
+                <p class="user-email">Goormedu@email.com</p>
+            </div>
+            </div>
+            <div class="jindo">
+                <p class="all">나의 전체 학습 진행도</p>
+                <p class="p">전체 강의 317개 중 111개의 강의 완료</p>
+                <div class="prog">
+                    <progress value="30" max="100" id="jb"></progress>
+                    <span>35%완료</span>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article class="study-nav">
+            <div class="nav-box">
+                <ul class="nav">
+                    <li><a href="#">수강중인 강좌</a></li>
+                    <li><a href="#">찜한 강좌</a></li>
+                    <li><a href="#">수료증</a></li>
+                    <li><a href="#">획득 배지</a></li>
+                    <li><a href="#">구매 내역</a></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <section id="contents">
+        <div id="content">
+            <article class="card-box">
+                <div class="classdo">
+                    <h2>
+                        최근 학습 강좌
+                    </h2>
+                </div>
+                <div class="classdo-box">
+                    <div>
+                        <img src="./img/e.jpg" alt="">
+                    </div>
+                    <div class="class-con">
+                        <p class="class-nm">안드로이드 + 파이어베이스 SNS앱 만들기</p>
+                        <p class="class-cl">마지막 수강 강의 : <span>[실습] 파이어베이스 훈련 1</span></p>
+                        <p class="class-dt">마지막 학습 일자 : 2021. 10. 25.</p>
+                    </div>
+                    <div class="class-btn">
+                        <a href="#"><span>이어하기</span></a>
+                    </div>
+                </div>
+            </article>
+            <article class="card-box">
+                <div class="classdo">
+                    <h2>
+                        수강중인 강좌
+                    </h2>
+                </div>
+                <div class="card-boxes">
+                    <div class="event-card">
+                        <div class="card-hover">
+                            
+                            <span class="score">
+                                <i class="fas fa-star"></i>4.5
+                            </span>
+                             <h1 class="cont-name">안드로이드 + 파이어베이스 SNS앱 만들기</h1>
+                             <span class="p">파이어베이스를 사용하여 안드로이드 SNS앱을 만드는 과정에 대한 영상 강좌입니다.</span>
+                             <div class="cont-lev">
+                                 <ul class="cont-lev-gray">
+                                     <li>난이도</li>
+                                     <li>수강기간</li>
+                                 </ul>
+                                 <ul>
+                                    <li>보통</li>
+                                    <li>평생 무제한</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="card-img" id="e">
+                            <button type="button" class="like-button">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="card-content">
+                            <h1 class="cont-name">안드로이드 + 파이어베이스 SNS앱 만들기</h1>
+                            <span class="teacher">Bored Developer</span>
+            
+                            <span class="score">
+                                <i class="fas fa-star"></i>4.5</span>
+                            <span class="per-score">/5.0</span>
+                            <span class="student">
+                                <i class="fas fa-user"></i>695</span>
+                           <div class="price">
+                            <span class="free">무료</span>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-hover">
+                            
+                            <span class="score">
+                                <i class="fas fa-star"></i>2.7
+                            </span>
+                             <h1 class="cont-name">레트로의 유니티 C# 프로그래밍 에센스</h1>
+                             <span class="p">간결하고 탁월한 유니티 Unity C# 게임 프로그래밍 트레이닝 패키지</span>
+                             <div class="cont-lev">
+                                 <ul class="cont-lev-gray">
+                                     <li>난이도</li>
+                                     <li>수강기간</li>
+                                 </ul>
+                                 <ul>
+                                    <li>쉬움</li>
+                                    <li>평생 무제한</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="card-img" id="f">
+                            <button type="button" class="like-button">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="card-content">
+                            <h1 class="cont-name">안드로이드 + 파이어베이스 SNS앱 만들기</h1>
+                            <span class="teacher">I_Jemin</span>
+            
+                            <span class="score">
+                                <i class="fas fa-star"></i>5.0</span>
+                            <span class="per-score">/5.0</span>
+                            <span class="student">
+                                <i class="fas fa-user"></i>36</span>
+                           <div class="price">
+                            <span class="free">₩88,000</span>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-hover">
+                            
+                            <span class="score">
+                                <i class="fas fa-star"></i>0.0
+                            </span>
+                             <h1 class="cont-name">실전!웹사이트제작 Step By Step! (클론코딩 : 포메인사이트제작 - 풀페이지)</h1>
+                             <span class="p">‘포메인(PhoMein)’ 메인 페이지 만들기</span>
+                             <div class="cont-lev">
+                                 <ul class="cont-lev-gray">
+                                     <li>난이도</li>
+                                     <li>수강기간</li>
+                                 </ul>
+                                 <ul>
+                                    <li>보통</li>
+                                    <li>평생 무제한</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="card-img" id="g">
+                            <button type="button" class="like-button">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="card-content">
+                            <h1 class="cont-name">실전!웹사이트제작 Step By Step! (클론코딩 : 포메인사이트제작 - 풀페이지)</h1>
+                            <span class="teacher">J.young</span>
+            
+                            <span class="score">
+                                <i class="fas fa-star"></i>0.0</span>
+                            <span class="per-score">/5.0</span>
+                            <span class="student">
+                                <i class="fas fa-user"></i>5</span>
+                           <div class="price">
+                            <span class="free">₩28,000</span>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-hover">
+                            
+                            <span class="score">
+                                <i class="fas fa-star"></i>5.0
+                            </span>
+                             <h1 class="cont-name">작정하고 django! 핀터레스트 만들기</h1>
+                             <span class="p">파이썬 웹 프레임워크 Django를 통해 핀터레스트의 카드형 UI를 클론 코딩합니다.</span>
+                             <div class="cont-lev">
+                                 <ul class="cont-lev-gray">
+                                     <li>난이도</li>
+                                     <li>수강기간</li>
+                                 </ul>
+                                 <ul>
+                                    <li>보통</li>
+                                    <li>평생 무제한</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="card-img" id="h">
+                            <button type="button" class="like-button">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="card-content">
+                            <h1 class="cont-name">작정하고 django! 핀터레스트 만들기</h1>
+                            <span class="teacher">Alucard</span>
+            
+                            <span class="score">
+                                <i class="fas fa-star"></i>5.0</span>
+                            <span class="per-score">/5.0</span>
+                            <span class="student">
+                                <i class="fas fa-user"></i>15</span>
+                           <div class="price">
+                            <span class="sale">10%
+                            <i class="fas fa-arrow-down"></i>
+                            </span>
+                            <span class="sale-p">₩
+                                69,300
+                                </span>
+                            <span class="pre-sale">₩77,000
+                            </span>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-hover">
+                            
+                            <span class="score">
+                                <i class="fas fa-star"></i>4.8
+                            </span>
+                             <h1 class="cont-name">홍드로이드의 수익창출 앱 개발</h1>
+                             <span class="p">초보자도 할 수 있는 안드로이드 앱개발! 이제 부업 대신 앱 제작해서 돈 벌자 😁</span>
+                             <div class="cont-lev">
+                                 <ul class="cont-lev-gray">
+                                     <li>난이도</li>
+                                     <li>수강기간</li>
+                                 </ul>
+                                 <ul>
+                                    <li>쉬움</li>
+                                    <li>평생 무제한</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="card-img" id="i">
+                            <button type="button" class="like-button">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="card-content">
+                            <h1 class="cont-name">홍드로이드의 수익창출 앱 <br> 개발</h1>
+                            <span class="teacher">홍드로이드r</span>
+            
+                            <span class="score">
+                                <i class="fas fa-star"></i>4.8</span>
+                            <span class="per-score">/5.0</span>
+                            <span class="student">
+                                <i class="fas fa-user"></i>364</span>
+                           <div class="price">
+                            <span class="free">₩55,000</span>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-hover">
+                            
+                            <span class="score">
+                                <i class="fas fa-star"></i>4.9
+                            </span>
+                             <h1 class="cont-name">TODO 앱을 직접 만들면서 배우는 node.js / express / bootstrap / jquery</h1>
+                             <span class="p">Node.js를 이용해서 간단한 웹 프로그래밍 예제를 실습합니다.</span>
+                             <div class="cont-lev">
+                                 <ul class="cont-lev-gray">
+                                     <li>난이도</li>
+                                     <li>수강기간</li>
+                                 </ul>
+                                 <ul>
+                                    <li>보통</li>
+                                    <li>평생 무제한</li>
+                                </ul>
+                             </div>
+                        </div>
+                        <div class="card-img" id="j">
+                            <button type="button" class="like-button">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h1 class="cont-name">TODO 앱을 직접 만들면서 배우는 node.js / express / bootstrap / jquery</h1>
+                            <span class="teacher">구름</span>
+            
+                            <span class="score">
+                                <i class="fas fa-star"></i>4.9</span>
+                            <span class="per-score">/5.0</span>
+                            <span class="student">
+                                <i class="fas fa-user"></i>1137</span>
+                           <div class="price">
+                            <span class="free">무료</span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="page">
+                <div class="page-con">
+                   <a href="#"> <i class="fas fa-angle-left"></i></a>
+                <span>page</span>
+                <a href="#"><i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="bottom">
+        <div class="help">
+            <span>도움이 필요하신가요?</span>
+            <span><a href="">강의자 도움말</a></span>
+            <span> <a href="">수강자 도움말</a></span>
+            <span>|</span>
+            <span>구름EDU와 함께 강좌 제작부터 배포까지!</span>
+            <span><a href="">강의자 되기</a></span>
+        </div>
+    </article>
+    <footer>
+        <div class="footer-info">
+            <div class="foo-t">
+                <div class="sublogo">
+                    <img src="./img/logo-sub.jpg" alt="">
+                </div>
+                <div class="foo-lan">
+                    <span>English</span>
+                    <span>한국어</span>
+                    <span>日本語</span>
+                    <div class="foo-info">
+                        <p>상호 : (주)구름 &nbsp;&nbsp; 대표:류성태&nbsp;&nbsp;개인정보보호책임자:김현화<br>
+                        주소 : 경기 성남시 분당구 판교로 242 PDC A동 602호<br>
+                        사업자등록번호:124-87-39200<br>
+                        통신판매업 신고 번호 : 제2019-성남분당B0224호<br>
+                        TEL : 031-600-8586&nbsp;&nbsp;&nbsp;&nbsp;Email : contact@goorm.io</p>
+                    </div>
+                </div>
+                <div class="sns">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <i class="fab fa-artstation"></i>
+                </div>
+            </div>
+            <div class="foo-b"></div>
+        </div>
+        <div class="footer-sub">
+            <span>© goorm Corp. All Rights Reserved.</span>
+            <ul class="foo-mini">
+                <li>We're Hiring!</li>
+                <li>광고문의</li>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>도움말</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
