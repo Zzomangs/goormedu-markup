@@ -419,8 +419,14 @@ progress{
     font-size: 15px;
     margin-bottom: 16px;
 }
+.cla-info li a{
+    color: var(--primary);
+}
 .cla-info li:last-child{
     border-bottom: none;
+}
+.QnAdate{
+    color: var(--light);
 }
 .QnAuser i{
     width: 20px;
@@ -432,10 +438,22 @@ progress{
     border-radius: 50%;
 }
 .cla-info li span{
-    padding: 0 10px;
+    padding-left: 10px;
     font-size: 12px;
-    border-right: 1px solid var(--gray-light);
+    /* border-right: 1px solid #d3d3d3; */
 }
+.cla-info li span:last-child{
+    border-right: none;
+}
+.cla-info li span::after{
+    content: "|";
+    color: #e8e8e8;
+    margin-left: 10px;
+}
+.cla-info li span:last-child::after{
+    content: "";
+}
+
 
 
 
