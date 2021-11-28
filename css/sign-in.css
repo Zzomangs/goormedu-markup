@@ -110,14 +110,10 @@
     position: relative;
 }
 
-.email-btn{
-    position: absolute;
-    height: 100%;
-    width: 4em;
-    height: 2.3em;
-    right: 10px;
-    bottom: 10px;
-    cursor: pointer;
+.info-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .chk-box-txt{
@@ -128,11 +124,20 @@
     margin-left: 3px;
 }
 /* 이용약관 txt */
-.notice-txt{
-    font-size: 12px;
+.info-txt{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
     margin: 10px 0;
 }
-.submit-btn{
+.info-txt a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+.info-txt a span:first-child{
+    margin-left: 15px;
+}
+.login-btn{
     display: block;
     width: 100%;
     height: 50px;
@@ -144,25 +149,10 @@
     opacity: 0.8;
     cursor: pointer;
 }
-.submit-btn:hover{
+.login-btn:hover{
     opacity: 1;
 }
-.ask-login{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-.ask-login > span{
-    font-size: 14px;
-    margin-right: 7px;
-}
-.go-login{
-    font-size: 14px;
-    color: var(--primary);
-}
-.go-login:hover{
-    text-decoration: underline;
-}
+
 /* 서비스 동의 txt */
 .btm-txt{
     text-align: center;
