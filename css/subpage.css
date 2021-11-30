@@ -456,22 +456,22 @@ span i{
     border-radius: 5px;
 }
 #e{
-    background-image: url(/img/e.jpg);
+    background-image: url(../img/e.jpg);
 }
 #f{
-    background-image: url(/img/f.jpg);
+    background-image: url(../img/f.jpg);
 }
 #g{
-    background-image: url(/img/g.jpg);
+    background-image: url(../img/g.jpg);
 }
 #h{
-    background-image: url(/img/h.jpg);
+    background-image: url(../img/h.jpg);
 }
 #i{
-    background-image: url(/img/i.jpg);
+    background-image: url(../img/i.jpg);
 }
 #j{
-    background-image: url(/img/j.jpg);
+    background-image: url(../img/j.jpg);
 }
 
 .page{
