@@ -204,7 +204,7 @@ progress{
 /* study-nav */
 .study-nav{
     width: 100%;
-    margin: 0 auto;
+    margin: 0 aito;
     border-top: solid 1px #e8e8e8;
     box-shadow: inset 0 -1px 0 #e8e8e8;
     /* 클래스홈도 박스쉐도우로 바꾸기 */
@@ -287,6 +287,24 @@ progress{
     margin-bottom: 20px;
 }
 
+select {
+  width: 200px;
+  padding: .8em .5em;
+  font-family: inherit;
+  /* background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #999;
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+select::-ms-expand {
+  /* for IE 11 */
+  display: none;
+}
+
 #class-box{
     /* width: 730px; */
     height: auto;
@@ -306,37 +324,6 @@ progress{
     width: 385px;
 }
 
-.box-second .cla-first{
-    height: 100px;
-}
-.box-second{
-    width: 385px;
-}
-
-
-
-#class-box:first-child{
-    margin-bottom: 30px;
-}
-#class-box2 ul{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-#class-box2 .cla-cont{
-    align-items: flex-start;
-    flex-direction: column;
-}
-#class-box2 .cla-number{
-    display: block;
-    font-size: 15px;
-    margin-bottom: 13px;
-    color: var(--gray-dark);
-}
-#class-box2 .cla-mn{
-    color: rgb(170, 170, 170)
-}
-
 .cla-first{
     width: 100%;
     display: flex;
@@ -345,128 +332,13 @@ progress{
     border-bottom: solid 1px #e8e8e8;
     font-weight: 700;
 }
-.cla-first:last-child{
-    font-size: 13px;
-}
-
-#class-box ul{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-=======
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--light);
-    font-size: 14px;
-    border-bottom: solid 1px #e8e8e8;
-}
-
-.cla-first a{
-    width: 310px;
-    height: 47px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 300;
-    background-color: var(--blue_5);
-}
-.cla-second{
-    height: 456px;
-}
-.my-nav{
-    display: flex;
-    width: 385px;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    box-shadow: inset 0 -1px 0 #e8e8e8;
-}
-.my-nav li{
-    width: 192.5px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.my-nav li:hover{
-    padding-bottom: 9px;
-    cursor: pointer;
-    color: var(--primary);
-    border-bottom: 1px solid var(--primary);
-}
 
 
 
-.cla-cont{
-    padding: 23px 35px;
-    border-bottom: solid 1px #e8e8e8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--gray-dark);
-    font-size: 17px;
-}
-.cla-cont:hover{
-    cursor: pointer;
-}
-.cla-cont span:last-child{
-    font-size: 12px;
-}
-.cla-mn{
-    flex-grow: 2;
-}
-.cla-number{
-    display: block;
-    margin-right: 20px;
-    color: var(--primary);
-}
 
-.cla-info {
 
-    width: 700px;
-    height: auto;
-    margin: 30px 0px;
-    font-size: 14px;
-    line-height: 1.5em;
-    background-color: var(--gray-light);
-    border: solid 1px #e8e8e8;
-}
-.cla-info li{
-    display: flex;
-    padding: 20px;
-    height: auto;
-    width: 100%;
-    height: auto;
-    font-size: 14px;
-    line-height: 1.5em;
-}
-.cla-info li{
-    height: auto;
-    padding: 36px;
-    align-items: center;
-    color: var(--gray-dark);
-    border-bottom: solid 1px #e8e8e8;
-}
 
-.cla-info li:last-child{
-    border-bottom: none;
-}
-.cla-info .fas{
-   font-size: 10px;
-   margin-right: 14px;
-}
-.cla-info-name{
-    display: block;
-    width: 137px;
-    font-weight: 700;
-}
-.cla-info p{
-    color: var(--gray-dark);
-}
+
 
 /* 강좌후기 */
 
@@ -574,32 +446,6 @@ progress{
 .teacher-name span:last-child{
     color: var(--blue_2);
 }
-=======
-.cla-info li h1{
-    font-size: 15px;
-    margin-bottom: 16px;
-}
-.cla-info li:last-child{
-    border-bottom: none;
-}
-.QnAuser i{
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-    border-radius: 50%;
-}
-.cla-info li span{
-    padding: 0 10px;
-    font-size: 12px;
-    border-right: 1px solid var(--gray-light);
-}
-
-
-
->>>>>>> 7e5ebecf86515adcb4fdb5022a6294261a8ddf9b
 /* bottom */
 .help{
     width: 100%;
