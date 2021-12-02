@@ -261,25 +261,7 @@ progress{
     display: flex;
     justify-content: space-between;
 }
-.price{
-    display: flex;
-    margin-top: 30px;
-    /* justify-content: center; */
-    align-items: center;
-}
-.sale{
-    color: var(--blue_3);
-}
 
-.pre-sale{
-    margin-left: 5px;
-    color: var(--gray);
-    text-decoration: line-through black;
-    font-size: 10px;
-}
-.free{
-    font-weight: 600;
-}
 /* class */
 #class{
     width: 1375px;
@@ -298,6 +280,11 @@ progress{
     border-radius: 5px;
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.10);
 }
+#cla-box-name {
+    font-size: 16px;
+    padding:0 0 27px 35px;
+}
+
 .box-first{
     width: 750px;
     margin-right: 30px;
@@ -415,6 +402,8 @@ progress{
     align-items: center;
     color: var(--gray-dark);
     border-bottom: solid 1px #e8e8e8;
+    display: flex;
+    justify-content: space-between;
 }
 .cla-info li h1{
     font-size: 15px;
@@ -423,9 +412,10 @@ progress{
 .cla-info li a{
     color: var(--primary);
 }
-.cla-info li:last-child{
+/* .cla-info li:last-child{
     border-bottom: none;
-}
+} */
+
 .QnAdate{
     color: var(--light);
 }
@@ -438,15 +428,15 @@ progress{
     background-color: var(--white);
     border-radius: 50%;
 }
-.cla-info li span{
+.cla-info .QnA1 span{
     padding-left: 10px;
     font-size: 12px;
     /* border-right: 1px solid #d3d3d3; */
 }
-.cla-info li span:last-child{
+.cla-info .QnA1 span:last-child{
     border-right: none;
 }
-.cla-info li span::after{
+.cla-info .QnA1 span::after{
     content: "|";
     color: #e8e8e8;
     margin-left: 10px;
@@ -455,7 +445,43 @@ progress{
     content: "";
 }
 
+.QnA2{
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+}
+.QnAtime span{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 20px;
+    text-align: center;
+}
+.QnAtime span:last-child{
+    margin-right: 0px;
+    margin-left: 14px;
+}
+.QnAtime2 span{
+    margin: 0 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.QnAtime2 span:last-child{
+    margin-right: 0px;
+}
 
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-con{
+    display: inline-block;
+    margin: 35px;
+    /* margin-bottom: 60px */
+}
+.page-con i {
+    margin: 0 30px;
+}
 
 
 /* bottom */
