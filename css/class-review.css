@@ -28,14 +28,14 @@ header{
 .header-mn li{
     font-size: 12px;
     color: var(--gray);
-    margin-right: 20px;
+    margin:0 8px;
+    padding: 2px 3px;
 }
 .header-mn li:hover{
     cursor: pointer;
 }
 .header-mn li:active{
     padding: 2px 3px;
-    margin-right: 14px;
     border: var(--primary);
     border-radius: 2px;
     background-color: var(--primary);
@@ -55,6 +55,70 @@ header{
 .logo{
     margin-right: 35px;
 }
+#btn_toggle{
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    color: var(--gray);
+    margin-right: 10px;
+    position: relative;
+}
+#btn_toggle .fab{
+    margin-right: 5px;
+}
+#btn_toggle:hover{
+    color: var(--primary);
+}
+#Toggle{
+    display: flex;
+    background-color: var(--white);
+	top: 20%;
+	left: 20%;
+	z-index: 2;
+    border-radius: 5px;
+    position: absolute;
+    box-shadow: -1px 4px 3px 0px rgba(0,0,0,0.10);
+}
+.nav-big li{
+    width: 178px;
+    height: 46px;
+    padding: 18px 14px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gray-dark);
+}
+.nav-big li:hover{
+    cursor: pointer;
+}
+.nav-big li:active{
+    color: var(--primary);
+    background-color: rgb(206, 229, 255);
+}
+.nav-big{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.nav-small li:hover{
+    cursor: pointer;
+}
+.nav-small{
+    background-color: var(--gray-light);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.nav-small li{
+    width: 178px;
+    height: 40px;
+    padding: 18px 14px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gray);
+    
+}
 .header-nav input{
     width: 340px;
     height: 34px;
@@ -62,12 +126,13 @@ header{
     border-radius: 5px;
     padding: 10px;
 }
-.container-1{
+.container-1 {
     width: 300px;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
     margin-right: 390px;
+    display: inline-block;
   }
   .container-1 input#search{
     width: 340px;
@@ -269,6 +334,60 @@ progress{
     margin-bottom: 20px;
 }
 
+.select{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+#search-box{
+    
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+select {
+   
+    height: 36px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #999;
+    border-radius: 0px;
+    background-color: #fff;
+  }
+  
+  .container-2{
+    width: 280px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    margin-right: 30px;
+    display: inline-block;
+  }
+  .container-2 input#search{
+    width: 260px;
+    height: 37px;
+    border: solid 0.4px var(--light);
+    font-size: 10pt;
+    margin-bottom: 27px;
+    /* float: left; */
+    padding-left: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  
+  }
+  .container-2 .icon{
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    margin: 13px;
+    z-index: 1;
+    color: #4f5b66;
+  }
+  #content-date{
+      margin-bottom: 27px;
+  }
 #class-box{
     /* width: 730px; */
     height: auto;
@@ -453,12 +572,12 @@ progress{
 .QnAtime span{
     font-size: 16px;
     font-weight: 700;
-    margin: 0 20px;
+    margin: 0 17px;
     text-align: center;
 }
 .QnAtime span:last-child{
     margin-right: 0px;
-    margin-left: 14px;
+    margin-left: 17px;
 }
 .QnAtime2 span{
     margin: 0 10px;

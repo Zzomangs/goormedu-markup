@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/class_info.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/eb78802e54.js" crossorigin="anonymous"></script>
+    <script src="js/main-nav.js"></script>
     <title>My class</title>
 </head>
 <body>
@@ -32,7 +34,47 @@
         <article class="header-main">
             <div class="header-nav">
              <a href="#"><img src="./img/logo.jpg" alt="" class="logo"></a>
-             <img src="./img/nav.jpg" alt="" class="logo">
+             <button id="btn_toggle"><i class="fab fa-windows"></i>전체메뉴</button>
+            <div id="Toggle" style="display:none">
+                <ul class="nav-big">
+                    <li id="btn_Toggle"><span>프로그래밍</span><i class="fas fa-angle-right"></i></li>
+                    <li id="btn_Toggle2"><span>비지니스</span><i class="fas fa-angle-right"></i></li>
+                    <li id="btn_Toggle3"><span>디자인</span><i class="fas fa-angle-right"></i></li>
+                </ul>
+                    <ul class="nav-small" id="toggle" style="display:none">
+                        <li><span>전체</span><span>392</span></li>
+                        <li><span>프로그래밍 기초</span><span>68</span></li>
+                        <li><span>모바일 프로그래밍</span><span>37</span></li>
+                        <li><span>웹 프로그래밍</span><span>118</span></li>
+                        <li><span>프로그래밍 교양</span><span>9</span></li>
+                        <li><span>블록 프로그래밍</span><span>13</span></li>
+                        <li><span>알고리즘</span><span>19</span></li>
+                        <li><span>개발 도구</span><span>7</span></li>
+                        <li><span>게임 개발</span><span>10</span></li>
+                        <li><span>데브옵스</span><span>11</span></li>
+                        <li><span>보안</span><span>29</span></li>
+                        <li><span>인공지능</span><span>22</span></li>
+                        <li><span>데이터베이스</span><span>11</span></li>
+                        <li><span>IoT</span><span>5</span></li>
+                        <li><span>데이터 추출/분석</span><span>23</span></li>
+                        <li><span>수학</span><span>3</span></li>
+                        <li><span>기타</span><span>7</span></li>
+                    </ul>
+                    <ul class="nav-small" id="toggle2" style="display:none">
+                        <li><span>전체</span><span>13</span></li>
+                        <li><span>프로젝트 관리</span><span>4</span></li>
+                        <li><span>오피스 활용</span><span>2</span></li>
+                        <li><span>데이터 분석</span><span>3</span></li>
+                        <li><span>기타</span><span>4</span></li>
+                    </ul>
+                    <ul class="nav-small" id="toggle3" style="display:none">
+                        <li><span>전체</span><span>9</span></li>
+                        <li><span>디자인 도구</span><span>4</span></li>
+                        <li><span>영상</span><span>2</span></li>
+                        <li><span>3D 모델링</span><span>1</span></li>
+                        <li><span>UX/UI</span><span>2</span></li>
+                    </ul>
+            </div>
              <div class="container-1">
                 <input type="search" id="search" placeholder="검색어를 입력하세요" />
                 <span class="icon"><i class="fa fa-search"></i></span>
