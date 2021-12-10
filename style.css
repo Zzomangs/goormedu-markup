@@ -255,26 +255,34 @@ header{
 /* contents */
 /* main-banner */
 
+#contents {
+    width: 1375px;
+    margin: 0 auto;
+    height: 360px;
+
+    margin-bottom: 65px;
+}
+
 .main-b{
     width: 1375px;
     margin: 0 auto;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.38);
     border-radius:15px;
-    margin-bottom: 65px;
+}
+.main-banner{
+    position: relative;
+    height: 360px;
+    display: flex;
 }
 .main-banner img{
-    width: 100%;
-    height: 100%;
-}
-.main-banner-b{
-    display: flex;
-    justify-content: center;
     width: 1375px;
+    height: 360px;
+    border-radius: 7px;
+    position: absolute;
 }
-.main-banner-b img{
-    width: auto;
-    margin-bottom: 10px;
-}
+
+
+
 
 /* event */
 .event{
