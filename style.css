@@ -259,7 +259,6 @@ header{
     width: 1375px;
     margin: 0 auto;
     height: 360px;
-
     margin-bottom: 65px;
 }
 
@@ -268,19 +267,21 @@ header{
     margin: 0 auto;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.38);
     border-radius:15px;
+    position: relative;
 }
 .main-banner{
     position: relative;
     height: 360px;
     display: flex;
+    overflow: hidden;
 }
+
 .main-banner img{
     width: 1375px;
     height: 360px;
     border-radius: 7px;
     position: absolute;
 }
-
 
 
 
