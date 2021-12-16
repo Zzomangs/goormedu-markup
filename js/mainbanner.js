@@ -1,6 +1,6 @@
 $(function(){
 	let current = 0;//현재 보이는 이미지의 인덱스(0부터)
-  
+	let setIntervalId;
 	$("#btns > li").click(function(){
 	  let i = $(this).index(); 
 	  //console.log(i)
@@ -15,7 +15,7 @@ $(function(){
 	//자동실행 함수
   
 	function timer(){
-	  setInterval(function(){
+		setIntervalId = setInterval(function(){
 		let n = current + 1; // 0 1 2 3
 		if(n == 6){
 		  n = 0;
@@ -25,6 +25,16 @@ $(function(){
 	  },3000)
 	  
 	};
+
+	//자동실행되는 함수를 제어
+    $(".main-banner").on({
+        mouseover:function(){
+            clearInterval(setIntervalId)//중지함수
+        },
+        mouseout:function(){
+            timer();//실행함수
+        }
+    });
   
   
 	//애니메이션 함수
