@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/class-review.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/eb78802e54.js" crossorigin="anonymous"></script>
+    <script src="js/main-nav.js"></script>
+    
+    <title>My class</title>
+</head>
+<body>
+    <header>
+        <article class="header-cate">
+           <div class="header-mn">
+            <ul class="header-f">
+                <li><a href="#">EDU</a></li>
+                <li><a href="#">LEVEL</a></li>
+                <li><a href="#">DEVTH</a></li>
+                <li><a href="#">IDE</a></li>
+                <li><a href="#">CODING PARTY</a></li>
+            </ul>
+            <ul class="header-s">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">Language(언어)</a></li>
+                <li><a href="#">Language(언어)</a></li>
+            </ul>
+           </div>
+        </article>
+        <article class="header-main">
+            <div class="header-nav">
+             <a href="#"><img src="./img/logo.jpg" alt="" class="logo"></a>
+             <button id="btn_toggle"><i class="fab fa-windows"></i>전체메뉴</button>
+            <div id="Toggle" style="display:none">
+                <ul class="nav-big">
+                    <li id="btn_Toggle"><span>프로그래밍</span><i class="fas fa-angle-right"></i></li>
+                    <li id="btn_Toggle2"><span>비지니스</span><i class="fas fa-angle-right"></i></li>
+                    <li id="btn_Toggle3"><span>디자인</span><i class="fas fa-angle-right"></i></li>
+                </ul>
+                    <ul class="nav-small" id="toggle">
+                        <li><span>전체</span><span>392</span></li>
+                        <li><span>프로그래밍 기초</span><span>68</span></li>
+                        <li><span>모바일 프로그래밍</span><span>37</span></li>
+                        <li><span>웹 프로그래밍</span><span>118</span></li>
+                        <li><span>프로그래밍 교양</span><span>9</span></li>
+                        <li><span>블록 프로그래밍</span><span>13</span></li>
+                        <li><span>알고리즘</span><span>19</span></li>
+                        <li><span>개발 도구</span><span>7</span></li>
+                        <li><span>게임 개발</span><span>10</span></li>
+                        <li><span>데브옵스</span><span>11</span></li>
+                        <li><span>보안</span><span>29</span></li>
+                        <li><span>인공지능</span><span>22</span></li>
+                        <li><span>데이터베이스</span><span>11</span></li>
+                        <li><span>IoT</span><span>5</span></li>
+                        <li><span>데이터 추출/분석</span><span>23</span></li>
+                        <li><span>수학</span><span>3</span></li>
+                        <li><span>기타</span><span>7</span></li>
+                    </ul>
+                    <ul class="nav-small" id="toggle2" style="display:none">
+                        <li><span>전체</span><span>13</span></li>
+                        <li><span>프로젝트 관리</span><span>4</span></li>
+                        <li><span>오피스 활용</span><span>2</span></li>
+                        <li><span>데이터 분석</span><span>3</span></li>
+                        <li><span>기타</span><span>4</span></li>
+                    </ul>
+                    <ul class="nav-small" id="toggle3" style="display:none">
+                        <li><span>전체</span><span>9</span></li>
+                        <li><span>디자인 도구</span><span>4</span></li>
+                        <li><span>영상</span><span>2</span></li>
+                        <li><span>3D 모델링</span><span>1</span></li>
+                        <li><span>UX/UI</span><span>2</span></li>
+                    </ul>
+            </div>
+
+             <div class="container-1">
+                <input type="search" id="search" placeholder="검색어를 입력하세요" />
+                <span class="icon"><i class="fa fa-search"></i></span>
+             </div>
+             <div class="board">
+                <div class="board-mn">
+                    <div>
+                        <span class="name"><a href="#">게시판</a></span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div>
+                        <span><a href="#">내 강좌</a></span>
+                    </div>
+                    <div class="invi">
+                        <a href="#"><span>초대코드입력</span></a>
+                    </div>
+                    <a href="#" class="circle"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="circle"><i class="fas fa-bell"></i></a>
+                </div>
+             </div>
+           </div>
+        </article>
+    </header>
+    <section class="study">
+        <article class="user-student">
+            <div id="student">
+                <img src="./img/e.jpg" alt="">
+            </div>
+            <div class="jindo-cont">
+                <div class="jindo-con">
+                    <p class="jindo-nm">안드로이드 + 파이어베이스 SNS앱 만들기</p>
+                    <p class="jindo-cl">마지막 수강 강의 : <span>[실습] 파이어베이스 훈련 1</span></p>
+                    <p class="jindo-dt">111개의 강의 중 111개 강의 수강</p>
+                </div>
+                <div class="prog">
+                    <progress value="100" max="100" id="jb"></progress>
+                    <span>100%완료</span>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article class="study-nav">
+            <div class="nav-box">
+                <ul class="nav">
+                    <li><a href="#">강좌 홈</a></li>
+                    <li><a href="#">강좌 정보</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">시험/과제</a></li>
+                </ul>
+                <div class="score">
+                    <span>수강평 남기기</span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+           
+        </article>
+    </section>
+    <section id="contents">
+        <div id="content">
+            <article id="class">
+                <div class="select">
+                    <h2 id="cla-box-name">등록된 질문</h2>
+                    
+                </div>
+                <div id="class-box" class="box-first">
+                    
+                    <div class="cla-first">
+                        <span>누구나 질문하고 답변할 수 있는 Q&A 게시판입니다. 다른 수강생들과 질문과 답변을 주고 받으며 함께 성장하세요!</span>
+                    </div>
+                    <div class="cla-info">
+                        <ul>
+                            <li>
+                                <div class="QnA1">
+                                    <h1>flexbox width값이 다른 자식들 center</h1>
+                                    <i class="fas fa-user-circle QnAuser"></i>
+                                    <span>username</span>
+                                    <span class="QnAdate">21. 11. 03. 오후 11:14</span>
+                                    <span>질문 경로: <a href="#">회원가입 화면 구현</a></span>
+                                </div>
+                                <div class="QnA2">
+                                    <div class="QnAtime">
+                                        <span>19</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                    </div>
+                                    <div class="QnAtime2">
+                                        <span>조회수</span>
+                                        <span>댓글</span>
+                                        <span>추천</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="QnA1">
+                                    <h1>예제 코드를 보다가 line-height에 대해서 질문드립니다.</h1>
+                                    <i class="fas fa-user-circle QnAuser"></i>
+                                    <span>username</span>
+                                    <span class="QnAdate">21. 11. 03. 오후 11:14</span>
+                                    <span>질문 경로: <a href="#">화면 구현 훈련</a></span>
+                                </div>
+                                <div class="QnA2">
+                                    <div class="QnAtime">
+                                        <span>04</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                    </div>
+                                    <div class="QnAtime2">
+                                        <span>조회수</span>
+                                        <span>댓글</span>
+                                        <span>추천</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="QnA1">
+                                    <h1>user-name 수직으로 가운대 배치할때(ㅔ분 30초)</h1>
+                                    <i class="fas fa-user-circle QnAuser"></i>
+                                    <span>username</span>
+                                    <span class="QnAdate">21. 11. 03. 오후 11:14</span>
+                                    <span>질문 경로: <a href="#">position 훈련</a></span>
+                                </div>
+                                <div class="QnA2">
+                                    <div class="QnAtime">
+                                        <span>21</span>
+                                        <span>1</span>
+                                        <span>0</span>
+                                    </div>
+                                    <div class="QnAtime2">
+                                        <span>조회수</span>
+                                        <span>댓글</span>
+                                        <span>추천</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="QnA1">
+                                    <h1>figma 디자인 시안링크가 잘못외었습니다.</h1>
+                                    <i class="fas fa-user-circle QnAuser"></i>
+                                    <span>username</span>
+                                    <span class="QnAdate">21. 11. 03. 오후 11:14</span>
+                                    <span>질문 경로: <a href="#">Float 훈련</a></span>
+                                </div>
+                                <div class="QnA2">
+                                    <div class="QnAtime">
+                                        <span>17</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                    </div>
+                                    <div class="QnAtime2">
+                                        <span>조회수</span>
+                                        <span>댓글</span>
+                                        <span>추천</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="QnA1">
+                                    <h1>section 태그</h1>
+                                    <i class="fas fa-user-circle QnAuser"></i>
+                                    <span>username</span>
+                                    <span class="QnAdate">21. 11. 03. 오후 11:14</span>
+                                    <span>질문 경로: <a href="#">Tweet</a></span>
+                                </div>
+                                <div class="QnA2">
+                                    <div class="QnAtime">
+                                        <span>08</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                    </div>
+                                    <div class="QnAtime2">
+                                        <span>조회수</span>
+                                        <span>댓글</span>
+                                        <span>추천</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="QnA1">
+                                    <h1>practice-03ecommerce</h1>
+                                    <i class="fas fa-user-circle QnAuser"></i>
+                                    <span>username</span>
+                                    <span class="QnAdate">21. 11. 03. 오후 11:14</span>
+                                    <span>질문 경로: <a href="#">회원가입 화면 구현</a></span>
+                                </div>
+                                <div class="QnA2">
+                                    <div class="QnAtime">
+                                        <span>03</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                    </div>
+                                    <div class="QnAtime2">
+                                        <span>조회수</span>
+                                        <span>댓글</span>
+                                        <span>추천</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="page">
+                            <div class="page-con">
+                               <a href="#"> <i class="fas fa-angle-left"></i></a>
+                            <span>page</span>
+                            <a href="#"><i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="class">
+                <div id="class-box" class="box-second">
+                    <div class="cla-first">
+                        <a href="#"><span>새 질문 등록</span></a>
+                    </div>
+                </div>
+                <div id="class-box" class="box-second">
+                    <div class="cla-second">
+                        <ul class="my-nav">
+                            <li><a href="#">내 질문</a></li>
+                            <li><a href="#">내 댓글</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!-- <article class="card-box">
+                <div class="classdo-box">
+                    
+                </div>
+            </article> -->
+        </div>
+    </section>
+    <article class="bottom">
+        <div class="help">
+            <span>도움이 필요하신가요?</span>
+            <span><a href="">강의자 도움말</a></span>
+            <span> <a href="">수강자 도움말</a></span>
+            <span>|</span>
+            <span>구름EDU와 함께 강좌 제작부터 배포까지!</span>
+            <span><a href="">강의자 되기</a></span>
+        </div>
+    </article>
+    <footer>
+        <div class="footer-info">
+            <div class="foo-t">
+                <div class="sublogo">
+                    <img src="./img/logo-sub.jpg" alt="">
+                </div>
+                <div class="foo-lan">
+                    <span>English</span>
+                    <span>한국어</span>
+                    <span>日本語</span>
+                    <div class="foo-info">
+                        <p>상호 : (주)구름 &nbsp;&nbsp; 대표:류성태&nbsp;&nbsp;개인정보보호책임자:김현화<br>
+                        주소 : 경기 성남시 분당구 판교로 242 PDC A동 602호<br>
+                        사업자등록번호:124-87-39200<br>
+                        통신판매업 신고 번호 : 제2019-성남분당B0224호<br>
+                        TEL : 031-600-8586&nbsp;&nbsp;&nbsp;&nbsp;Email : contact@goorm.io</p>
+                    </div>
+                </div>
+                <div class="sns">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <i class="fab fa-artstation"></i>
+                </div>
+            </div>
+            <div class="foo-b"></div>
+        </div>
+        <div class="footer-sub">
+            <span>© goorm Corp. All Rights Reserved.</span>
+            <ul class="foo-mini">
+                <li>We're Hiring!</li>
+                <li>광고문의</li>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>도움말</li>
+            </ul>
+        </div>
+    </footer>
+   
+</body>
+</html>

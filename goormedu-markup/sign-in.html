@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sign-in.css">
+</head>
+
+<body>
+    <main id="container">
+        <div id="in-container">
+
+            <!-- 구름 txt -->
+            <header id="header">
+                <h1><a href="index.html" class="logo">goorm</a></h1>
+                <span>하나의 아이디로 구름 서비스를 이용하세요.</span>
+            </header>
+
+            <!-- 소셜 회원가입 -->
+            <section id="social">
+                <span>다른 서비스로 로그인</span>
+                <ul class="social-btns">
+                    <li><a href="#"><img src="icon/google.png" alt="구글"></i></a></li>
+                    <li><a href="#"><img src="icon/facebook.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="icon/kakao.png" alt="카카오"></a></li>
+                    <li><a href="#"><img src="icon/naver.png" alt="네이버"></a></li>
+                    <li><a href="#"><img src="icon/github.png" alt="깃허브"></a></li>
+                    <li><a href="#"><img src="icon/bitbucket.png" alt="비트버켓"></a></li>
+                    <li><a href="#"><img src="icon/payco.png" alt="페이코"></a></li>
+                </ul>
+            </section>
+
+            <!-- 선 -->
+            <div class="line">
+                <span>또는</span>
+            </div>
+
+            <!-- 회원가입 폼 -->
+            <form action="" class="sign-in-form">
+                <div class="ip-box">
+                    <input type="text" class="email-ip" placeholder="이메일">
+                </div>
+
+                <div class="ip-box">
+                    <input type="password" class="pwd-ip" placeholder="비밀번호">
+                </div>
+
+                <div class="info-nav">
+                    <div class="check">
+                        <input type="checkbox" name="info" id="info-chk">
+                        <span class="chk-box-txt">로그인 상태 유지</span>
+                    </div>
+                    <div class="info-txt">
+                        <a href="#"><span>비밀번호 재설정</span></a>
+                        <a href="#"><span>회원가입</span></a>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="login-btn">로그인</button>
+                </div>
+
+                <!-- 하단 txt -->
+                <div class="btm-txt">
+                    <span>
+                        회원가입 시 goorm의 <a href="#"><strong>서비스 약관</strong></a> 및<br>
+                        <a href="#"><strong>개인정보 처리방침</strong></a>을 확인하였으며, 동의합니다.
+                    </span>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="policy">
+            <ul>
+                <li><a href="#" class="terms">이용약관</a></li>
+                <li><a href="#" class="privacy">개인정보처리방침</a></li>
+            </ul>
+        </div>
+        <div class="small-txt">
+            <span>ⓒ goorm inc.All Rights Reserved.</span>
+        </div>
+
+        <div class="languages">
+            <ul>
+                <li><a href="#" class="korean">한국어</a></li>
+                <li><a href="#" class="english">English</a></li>
+                <li><a href="#" class="japanese">日本語</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="js/sign-in.js"></script>
+</body>
+
+</html>
