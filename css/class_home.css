@@ -427,7 +427,42 @@ progress{
     margin-right: 20px;
     color: var(--primary);
 }
+.cla-contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gray);
+    height: 52px;
+    padding: 13px 35px;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: var(--gray-light);
+}
+.cla-file{
+    margin-left: 3px;
+    margin-right: 20px;
+}
+.cla-name{
+    margin-right: 7px;
+}
+.video{
+    flex-grow: 2;
+}
+.cla-date{
+    font-size: 12px;
+    color: var(--light);
+    margin-right: 10px;
+}
+.cla-score{
+    color: var(--primary);
+}
+.fa-check-circle{
+    margin-left: 5px;
+    color: var(--primary);
 
+}
+.cla-show{
+    display: block;
+}
 
 .help{
     width: 100%;
