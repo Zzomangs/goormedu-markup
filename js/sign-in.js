@@ -1,6 +1,15 @@
 const email_ip = document.querySelector('.email-ip');
 const pwd_ip = document.querySelector('.pwd-ip');
 const login_btn = document.querySelector('.login-btn');
+const logo = document.querySelector('.logo');
+const go_sign_up = document.querySelectorAll('.info-txt a');
+
+logo.onclick = () => {
+    location.href = 'index.html';
+}
+go_sign_up[1].onclick = () => {
+    location.href = 'sign-up.html';
+}
 
 // 안먹히는 이유
 login_btn.onkeypress = () => {
