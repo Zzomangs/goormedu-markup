@@ -5,6 +5,11 @@ const name_ip = document.querySelector('.name-ip');
 
 const email_btn = document.querySelector('.email-btn');
 const submit_btn = document.querySelector('.submit-btn');
+const logo = document.querySelector('.logo');
+
+logo.onclick = () => {
+    location.href = 'index.html';
+}
 
 submit_btn.onkeypress = () => {
     if (window.event.keyCode == 13) {

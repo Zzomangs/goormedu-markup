@@ -182,10 +182,7 @@ header{
     z-index: 1;
     color: #4f5b66;
   }
-.board{
-    justify-content: flex-end;
-    margin-right: 5px;
-}
+
 /* contents */
 /* main-banner */
 
