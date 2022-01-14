@@ -18,10 +18,16 @@ $(function (){
 	$(".cla-first span:last-child").click(function (){
   	$(".cla-sub-list").toggle();
   });
-  //
+  //클릭된요소의 하위요소들 펼치기
   $('.cla-list > li > .cla-cont').click(function(e){
     e.stopPropagation();
     $(this).next($('.cla-sub-list')).slideToggle();
   })
+  //영상 클릭 시 본 흔적남기기
+  $('.cla-contents').click(function(){
+    $(this).children($('.cla-watched')).addClass('active');
+  })
+  // $("li > a").blur(function(){
+  //   $(this).removeClass('selec');
+  // })
 });
-
