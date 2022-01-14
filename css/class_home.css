@@ -401,8 +401,11 @@ progress{
 
 #class-box ul{
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.cla-sub-list{
+    display: none;
 }
 .cla-cont{
     padding: 23px 35px;
@@ -446,6 +449,12 @@ progress{
 }
 .video{
     flex-grow: 2;
+}
+.cla-watched{
+    display: none;
+}
+.cla-watched.active{
+    display: block;
 }
 .cla-date{
     font-size: 12px;

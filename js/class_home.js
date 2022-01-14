@@ -1,4 +1,4 @@
-const nav_atags = document.querySelectorAll('.nav li a');
+//const nav_atags = document.querySelectorAll('.nav li a');
 
 // nav_atags[0].onclick = () => {
 //     location.href = 'class_home.html'; 
@@ -16,17 +16,12 @@ const nav_atags = document.querySelectorAll('.nav li a');
 // 모두 펼치고 닫기
 $(function (){
 	$(".cla-first span:last-child").click(function (){
-  	$(".cla-contents").toggle();
+  	$(".cla-sub-list").toggle();
   });
+  //
+  $('.cla-list > li > .cla-cont').click(function(e){
+    e.stopPropagation();
+    $(this).next($('.cla-sub-list')).slideToggle();
+  })
 });
 
-const contetnts = document.querySelectorAll('.cla-cont');
-const contetntsList = document.querySelectorAll('.cla-contents');
-
-for(let i =0; i < contetnts.length; i++){
-    contetnts[i].onclick = () =>{
-        if(contetnts[i] == contetntsList[i]){
-            contetntsList[i].style.display = 'block';
-        };
-    };
-};
